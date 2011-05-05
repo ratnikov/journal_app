@@ -74,6 +74,7 @@ class OwnersController < ApplicationController
     @owner.destroy
 
     respond_to do |wants|
+      flash[:notice] = 'Owner was successfully deleted.'
       wants.html { redirect_to(owners_url) }
       wants.xml  { head :ok }
     end

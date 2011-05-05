@@ -15,5 +15,8 @@ Feature: Manage owners
     Given the following owners:
       |name|email|
       |Deryl R. Doucette|me@deryldoucette.com|
-    When I follow "Delete"
-    Then I should see "Owner has been deleted."
+    And I am on the owners page
+    And I follow "Deryl R. Doucette"
+    And I follow "Delete"
+    And show me the page
+    Then I should see "Owner was successfully deleted."
