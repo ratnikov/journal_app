@@ -1,0 +1,11 @@
+<%= semantic_form_for @owner do |form| %>
+  <%= form.error_messages %>
+  <p>
+    <%= form.inputs do %>
+      <%= form.input :name %>
+      <%= form.input :email %>
+    <% end %>
+  </p>
+  <%= form.submit %>
+
+<% end%>

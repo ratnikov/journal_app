@@ -1,0 +1,9 @@
+<h1>Owners</h1>
+<p>
+  Owner Name: <%= @owner.name %><br>
+  Owner Email: <%= @owner.email %><br>
+
+  <%= link_to "Edit", edit_owner_path(@owner) %>
+  <%= link_to "Delete", @owner, :method => :delete,
+               :confirm => "Are you sure you want to delete this owner?" %>
+</p>
