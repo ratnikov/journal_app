@@ -2,9 +2,10 @@ Feature: Manage journals
   In order to [goal]
   [stakeholder]
   wants [behaviour]
-  
+
   Scenario: Register new journal
     Given I am on the new journal page
+    And show me the page
     When I fill in "Name" with "name 1"
     And I press "Create"
     Then I should see "name 1"
