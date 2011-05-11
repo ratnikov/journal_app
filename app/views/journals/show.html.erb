@@ -1,2 +1,8 @@
-<h1>Journals#show</h1>
-<p>Find me in app/views/journals/show.html.erb</p>
+<h1>Journals</h1>
+<p>
+  Journal Name: <%= @journal.name %><br>
+
+  <%= link_to "Edit", edit_journal_path(@journal) %>
+  <%= link_to "Delete", @journal, :method => :delete,
+               :confirm => "Are you sure you want to delete this journal?" %>
+</p>
