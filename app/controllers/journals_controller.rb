@@ -74,6 +74,7 @@ class JournalsController < ApplicationController
     @journal.destroy
 
     respond_to do |wants|
+      flash[:notice] = 'Journal was successfully deleted.'
       wants.html { redirect_to(journals_url) }
       wants.xml  { head :ok }
     end

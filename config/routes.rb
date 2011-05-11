@@ -63,3 +63,27 @@ JournalApp::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+#== Route Map
+# Generated on 11 May 2011 00:42
+#
+#             owners GET    /owners(.:format)                                {:action=>"index", :controller=>"owners"}
+#                    POST   /owners(.:format)                                {:action=>"create", :controller=>"owners"}
+#          new_owner GET    /owners/new(.:format)                            {:action=>"new", :controller=>"owners"}
+#         edit_owner GET    /owners/:id/edit(.:format)                       {:action=>"edit", :controller=>"owners"}
+#              owner GET    /owners/:id(.:format)                            {:action=>"show", :controller=>"owners"}
+#                    PUT    /owners/:id(.:format)                            {:action=>"update", :controller=>"owners"}
+#                    DELETE /owners/:id(.:format)                            {:action=>"destroy", :controller=>"owners"}
+#    journal_entries GET    /journals/:journal_id/entries(.:format)          {:action=>"index", :controller=>"entries"}
+#                    POST   /journals/:journal_id/entries(.:format)          {:action=>"create", :controller=>"entries"}
+#  new_journal_entry GET    /journals/:journal_id/entries/new(.:format)      {:action=>"new", :controller=>"entries"}
+# edit_journal_entry GET    /journals/:journal_id/entries/:id/edit(.:format) {:action=>"edit", :controller=>"entries"}
+#      journal_entry GET    /journals/:journal_id/entries/:id(.:format)      {:action=>"show", :controller=>"entries"}
+#                    PUT    /journals/:journal_id/entries/:id(.:format)      {:action=>"update", :controller=>"entries"}
+#                    DELETE /journals/:journal_id/entries/:id(.:format)      {:action=>"destroy", :controller=>"entries"}
+#           journals GET    /journals(.:format)                              {:action=>"index", :controller=>"journals"}
+#                    POST   /journals(.:format)                              {:action=>"create", :controller=>"journals"}
+#        new_journal GET    /journals/new(.:format)                          {:action=>"new", :controller=>"journals"}
+#       edit_journal GET    /journals/:id/edit(.:format)                     {:action=>"edit", :controller=>"journals"}
+#            journal GET    /journals/:id(.:format)                          {:action=>"show", :controller=>"journals"}
+#                    PUT    /journals/:id(.:format)                          {:action=>"update", :controller=>"journals"}
+#                    DELETE /journals/:id(.:format)                          {:action=>"destroy", :controller=>"journals"}

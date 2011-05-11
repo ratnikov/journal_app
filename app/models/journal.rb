@@ -6,3 +6,16 @@ class Journal < ActiveRecord::Base
   validates :name, :presence => true
 
 end
+
+# == Schema Information
+#
+# Table name: journals
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  owner_id   :integer
+#  entry_id   :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+

@@ -201,6 +201,7 @@ DEPENDENCIES
   launchy
   paperclip
   pg
+  rack-test
   rails (= 3.0.7)
   rcov
   rspec-expectations

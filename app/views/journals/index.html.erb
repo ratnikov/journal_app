@@ -1,2 +1,7 @@
-<h1>Journals#index</h1>
-<p>Find me in app/views/journals/index.html.erb</p>
+<h2>Journals</h2>
+<ul>
+  <% @journals.each do |journal| %>
+        <li><%= link_to journal.name, journal %></li>
+  <% end %>
+</ul>
+<%= link_to "New journal", new_journal_path %>
