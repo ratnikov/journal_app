@@ -1,8 +1,8 @@
 Feature: Manage entries
-  In order to [goal]
-  [stakeholder]
-  wants [behaviour]
-  
+  In order to have journals
+  As a user
+  I want to be able to create and manage journals
+
   Scenario: Register new entry
     Given I am on the new entry page
     When I fill in "Name" with "name 1"
