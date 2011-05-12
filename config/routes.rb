@@ -1,6 +1,8 @@
 JournalApp::Application.routes.draw do
 
-  resources :owners
+  resources :owners do
+    resources :journals
+  end
 
   resources :journals do
     resources :entries

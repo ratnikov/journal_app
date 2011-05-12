@@ -47,6 +47,7 @@ class JournalsController < ApplicationController
         wants.html { redirect_to(@journal) }
         wants.xml  { render :xml => @journal, :status => :created, :location => @journal }
       else
+        flash[:alert] = "Journal was not created."
         wants.html { render :action => "new" }
         wants.xml  { render :xml => @journal.errors, :status => :unprocessable_entity }
       end
