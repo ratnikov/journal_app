@@ -80,7 +80,7 @@ class EntriesController < ApplicationController
   end
 
   private
-    def find_entrie
+    def find_entry
       @entry = Entry.find(params[:id])
     end
 
