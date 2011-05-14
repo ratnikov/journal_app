@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe OwnersController do
+    let(:owner) { create_owner! }
 
   describe "GET 'index'" do
     it "should be successful" do
