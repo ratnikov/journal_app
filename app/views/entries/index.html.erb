@@ -1,7 +1,7 @@
 <h2>Entries</h2>
 <ul>
   <% @entries.each do |entry| %>
-        <li><%= link_to entry.name, entry.name %></li>
+        <li><%= link_to entry.name, entry %></li>
         <li><%= entry.body %>
   <% end %>
 </ul>
