@@ -1,6 +1,54 @@
 JournalApp::Application.routes.draw do
 
-  resources :owners
+  get "owners/index"
+
+  get "owners/create"
+
+  get "owners/new"
+
+  get "owners/show"
+
+  get "owners/edit"
+
+  get "owners/update"
+
+  get "owners/destroy"
+
+  get "journals/index"
+
+  get "journals/create"
+
+  get "journals/new"
+
+  get "journals/show"
+
+  get "journals/edit"
+
+  get "journals/update"
+
+  get "journal/destroy"
+
+  get "entries/index"
+
+  get "entries/create"
+
+  get "entries/new"
+
+  get "entries/show"
+
+  get "entries/edit"
+
+  get "entries/update"
+
+  get "entries/destroy"
+
+  root  :to =>  "owners#index"
+
+  resources :entries
+
+  resources :owners do
+    resources :journals
+  end
 
   resources :journals do
     resources :entries

@@ -72,7 +72,7 @@ class EntriesController < ApplicationController
   # DELETE /entries/1.xml
   def destroy
     @entry.destroy
-
+    flash[:notice] = 'Entry was successfully deleted.'
     respond_to do |wants|
       wants.html { redirect_to(entries_url) }
       wants.xml  { head :ok }
@@ -80,7 +80,7 @@ class EntriesController < ApplicationController
   end
 
   private
-    def find_entrie
+    def find_entry
       @entry = Entry.find(params[:id])
     end
 

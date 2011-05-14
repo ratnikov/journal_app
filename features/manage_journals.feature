@@ -1,17 +1,16 @@
 Feature: Manage journals
-  In order to [goal]
-  [stakeholder]
-  wants [behaviour]
+  In order to have journals
+  As a user
+  I want to be able to create and manage my journals
 
   Background:
     Given the following journals:
       |name|
       |test_journal|
-    And I am on the journals page
 
   Scenario: Create a new journal
     Given I am on the new journal page
-    When I fill in "Name" with "name 1"
+    When I fill in "Name" with "test_journal"
     And I press "Create"
     Then I should see "Journal was successfully created."
 

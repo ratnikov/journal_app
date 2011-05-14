@@ -1,2 +1,9 @@
-<h1>Entries#show</h1>
-<p>Find me in app/views/entries/show.html.erb</p>
+<h1>Entries</h1>
+<p>
+  Entry Name: <%= @entry.name %><br>
+  Entry Body: <%= @entry.body %><br>
+
+  <%= link_to "Edit", edit_entry_path(@entry) %>
+  <%= link_to "Delete", @entry, :method => :delete,
+               :confirm => "Are you sure you want to delete this entry?" %>
+</p>
