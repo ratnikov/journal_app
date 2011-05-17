@@ -44,8 +44,6 @@ JournalApp::Application.routes.draw do
 
   root  :to =>  "owners#index"
 
-  resources :entries
-
   resources :owners do
     resources :journals
   end
