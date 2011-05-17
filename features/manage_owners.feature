@@ -1,6 +1,6 @@
 Feature: Manage owners
   In order to have owners
-  As a user
+  As an owner
   I want to be able to create and manage my account
 
   Background:
