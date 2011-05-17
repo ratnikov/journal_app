@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe OwnersController do
-    let(:owner) { Factory(:owner) }
+    let(:owner) { Factory.create!(:owner) }
 
   describe "GET 'index'" do
     it "should be successful" do
