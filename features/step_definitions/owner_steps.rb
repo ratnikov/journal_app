@@ -1,3 +1,7 @@
+Given /^an owner$/ do
+  @owner = Owner.create!
+end
+
 Given /^the following owners:$/ do |owners|
   Owner.create!(owners.hashes)
 end
